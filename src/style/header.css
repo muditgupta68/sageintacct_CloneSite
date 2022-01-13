@@ -1,0 +1,19 @@
+.header,
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: #fff;
+}
+.header {
+  background-color: #335c6c;
+}
+.options > p {
+  margin: 0 20px;
+  text-transform: capitalize;
+}
+.header > h4 {
+  display: block;
+  margin: auto;
+}

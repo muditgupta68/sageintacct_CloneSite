@@ -1,0 +1,38 @@
+.card {
+  padding: 50px 30px;
+  background-color: #fff;
+  height: 180px;
+}
+
+.content {
+  border-right: 1px solid #bcbcb7;
+  max-width: 298px;
+  /* width: 1000px; */
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #212322;
+  margin: 0 0 10px;
+}
+.para {
+  margin: 0;
+  color: #51534a;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 40px 40px 0;
+}
+.link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #090;
+  margin: 0;
+  padding: 7px 21px 7px 0;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}

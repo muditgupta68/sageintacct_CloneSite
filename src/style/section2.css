@@ -1,0 +1,63 @@
+.wrapper_div > h2 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 570px;
+  color: #212322;
+}
+.ind_menu > div {
+  height: 65px;
+  border-top: 1px solid #bcc9cf;
+  display: flex;
+  align-items: center;
+  color: #212322;
+  transition: color 0.5s ease;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.industryBox {
+  display: flex;
+}
+.industryBox > div {
+  width: 50%;
+  margin-top: 50px;
+  padding: 0 100px;
+}
+.plate > h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 16px 12px;
+  color: #262626;
+}
+.plate > p {
+  margin: 0 16px 14px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #212322;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 64px;
+}
+.plate > img {
+  max-width: 100%;
+  height: 322px;
+}
+.plate > a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #090;
+  margin: 0 16px 34px;
+  padding: 7px 21px 7px 0;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #090;
+  position: relative;
+}

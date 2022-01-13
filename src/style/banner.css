@@ -1,0 +1,56 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f7fa;
+  padding: 100px 0 95px;
+}
+.banner_img {
+  padding: 15px 24px 18px;
+}
+.imgCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 7px 24px rgb(0 0 0 / 15%);
+}
+.banner_item {
+  padding-left: 21px;
+  padding-right: 16px;
+}
+
+.banner_item > h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: #212322;
+  margin: 0 0 15px;
+}
+.banner_item > p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #51534a;
+  margin: 0 0 10px;
+  max-width: 510px;
+}
+.banner_item > button {
+  border-color: #090;
+  color: #090;
+  padding: 0 19px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  margin: 40px 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+}
+.banner_item > button:hover {
+  background-color: #090;
+  color: #fff;
+}

@@ -1,0 +1,89 @@
+.features {
+  padding: 140px 30px;
+}
+.features > h1 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 837px;
+  margin: 10px auto 70px;
+  color: #212322;
+  text-align: center;
+  text-transform: capitalize;
+}
+strong {
+  font-weight: bold;
+}
+.item {
+  padding: 20px 22px;
+  border-bottom: 1px solid #e3e3e1;
+  position: relative;
+  min-height: 66px;
+}
+.selector {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.option_selector,
+.selector > img {
+  margin: 0 60px;
+}
+
+.item > h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  color: #212322;
+  cursor: pointer;
+}
+.desc > p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150.19%;
+  color: #51534a;
+  margin: 0 0 14px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 21px;
+}
+.active {
+  display: block !important;
+}
+li {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #51534a;
+  margin-bottom: 12px;
+  padding: 0 0 0 20px;
+  font-weight: 300 !important;
+  background: url(https://www.sageintacct.com/sites/all/themes/sageintacct/assets/img/product/green-check.svg)
+    no-repeat top 3px left !important;
+}
+.desc {
+  display: none;
+}
+.desc::before {
+  content: "";
+  position: absolute;
+  width: -moz-available;
+  height: 4px;
+  top: -4px;
+  background: 0 0;
+  left: 0;
+  transition: width 0.1s linear;
+}
+.desc.active::before {
+  content: "";
+  position: absolute;
+  width: -moz-available;
+  height: 4px;
+  top: -4px;
+  background: green;
+  left: 0;
+  transition: width 0.1s linear;
+}

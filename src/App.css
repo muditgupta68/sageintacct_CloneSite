@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper_div {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+  }
+  .wrap {
+    width: initial !important;
+  }
+  .option_selector {
+    display: none !important;
+  }
+  .industryBox > div {
+    width: 100% !important;
+    padding: 0 24px !important  ;
+  }
+  .industryBox {
+    flex-direction: column-reverse;
+  }
+  .rightPart {
+    margin-top: 0px !important;
+    width: 100% !important;
+  }
+  .left {
+    max-width: 100% !important;
+  }
+  .custom {
+    flex-direction: column-reverse;
+  }
+  .leftPart {
+    width: 100% !important;
+  }
+  .wrap_data {
+    padding: 256px 0 0 20px !important;
+  }
+  .card_div {
+    flex-direction: column;
+  }
+  .options {
+    display: none !important;
+  }
+  .header > h4 {
+    margin: 0 18px !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrap {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .menu {
+    display: none !important;
+    width: 100% !important;
+    height: 141% !important;
+    position: fixed;
+    top: 24px;
+    left: 0;
+  }
+  .menuBar {
+    display: block !important;
+    cursor: pointer;
+  }
+  .navbar {
+    justify-content: space-between !important;
+  }
+  .menu_opt {
+    display: block !important;
+  }
+  .menu_opt > p {
+    margin: 50px 32px !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .menu > button {
+    display: block;
+    margin: auto;
+    font-size: 17px !important;
+    min-width: 250px !important;
+    height: 60px;
+  }
+  .mobile {
+    display: flex !important;
+  }
+}
