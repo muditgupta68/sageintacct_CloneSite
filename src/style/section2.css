@@ -27,6 +27,11 @@
   margin-top: 50px;
   padding: 0 100px;
 }
+
+.plate {
+  display: none;
+}
+
 .plate > h3 {
   font-weight: 700;
   font-size: 18px;
@@ -60,4 +65,7 @@
   text-decoration: none;
   border-bottom: 1px solid #090;
   position: relative;
+}
+.visible {
+  display: block !important;
 }

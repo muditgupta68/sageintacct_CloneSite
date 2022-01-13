@@ -92,3 +92,20 @@ b {
   line-height: 50px;
   font-weight: 600;
 }
+#leftNav,
+#rightNav {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 30px;
+  top: 50px;
+}
+#leftNav {
+  left: 0;
+}
+#rightNav {
+  right: 0;
+}
+.customCards {
+  position: relative;
+}

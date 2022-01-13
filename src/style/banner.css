@@ -12,9 +12,10 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 10px 7px 24px rgb(0 0 0 / 15%);
+  margin-right: 205px;
 }
 .banner_item {
-  padding-left: 21px;
+  padding-left: 156px;
   padding-right: 16px;
 }
 
@@ -23,7 +24,7 @@
   font-size: 50px;
   line-height: 64px;
   color: #212322;
-  margin: 0 0 15px;
+  margin: 65px 0 15px;
 }
 .banner_item > p {
   font-weight: 300;

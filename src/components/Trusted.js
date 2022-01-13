@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import "../style/trusted.css";
 import CustomCards from "./CustomCards";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 function Trusted() {
   const [c1, setC1] = useState(true);
   const [c2, setC2] = useState(false);
+  const handleClick = () => {
+    setC1(!c1);
+    setC2(!c2);
+  };
   return (
     <div className="wrapper_div">
       <div className="wrap_data">
         <h1 className="left">Trusted by over 15,000 customers</h1>
         <div className="customCards">
+          <span>
+            <ChevronLeftIcon id="leftNav" onClick={handleClick} />
+            <ChevronRightIcon id="rightNav" onClick={handleClick} />
+          </span>
           <CustomCards
             img="https://www.sageintacct.com/sites/default/files/styles/customer-quote-slider/public/red-door-interactive-featured-customer.png"
             quote={`"The first time I pulled up Sage Intact Budgeting and Planning in our

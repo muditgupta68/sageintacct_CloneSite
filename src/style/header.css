@@ -8,6 +8,10 @@
 }
 .header {
   background-color: #335c6c;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
 }
 .options > p {
   margin: 0 20px;

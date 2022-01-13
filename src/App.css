@@ -70,6 +70,7 @@
   }
   .navbar {
     justify-content: space-between !important;
+    top: 38px !important;
   }
   .menu_opt {
     display: block !important;
@@ -90,5 +91,8 @@
   }
   .mobile {
     display: flex !important;
+  }
+  .imgCard {
+    margin-right: 0px !important;
   }
 }

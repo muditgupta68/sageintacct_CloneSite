@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../style/partner.css";
 function CardImage({ img, para }) {
   return (
     <div className="cardImage">

@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/feature.css";
-function Item({ id, head, desc, p1, p2, p3, p4, value }) {
+function Item({ id, head, desc, p1, p2, p3, p4, value,func }) {
   return (
     <div className="item" key={id}>
-      <h3>{head}</h3>
+      <h3 onClick={func}>{head}</h3>
       <div className={`desc && ${value && "active"}`}>
         <p>{desc}</p>
         <ul>
