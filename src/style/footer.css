@@ -8,3 +8,16 @@
   margin-top: 20px;
   text-align: center;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ic_ons {
+  margin: 10px 15px;
+  cursor: pointer;
+}
+.author {
+  text-decoration: none;
+  color: #091;
+}

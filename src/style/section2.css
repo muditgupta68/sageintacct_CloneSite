@@ -25,7 +25,7 @@
 .industryBox > div {
   width: 50%;
   margin-top: 50px;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 .plate {
@@ -68,4 +68,8 @@
 }
 .visible {
   display: block !important;
+}
+.selected {
+  font-weight: bolder;
+  color: #090 !important;
 }

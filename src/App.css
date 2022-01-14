@@ -2,11 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .wrapper_div {
   padding: 0 30px;
   margin: 0 auto;
 }
+.top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 999px;
+  border: 0;
+  background-color: green;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.next > h1 {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
   .banner {
     flex-direction: column;

@@ -1,28 +1,42 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import Banner from "./components/Banner";
-import Features from "./components/Features";
-import Feature_card from "./components/Feature_card";
 import Footer from "./components/Footer";
-// import { Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Partner from "./components/Partner";
-import Section2 from "./components/Section2";
-import Trusted from "./components/Trusted";
+import Home from "./components/Home";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Next from "./components/Next";
+
 function App() {
+  const [up, setUp] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setUp(true);
+      } else {
+        setUp(false);
+      }
+    });
+  }, []);
+  const topTo = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div>
-      <Header />
-      <Navbar />
-
-      <Banner />
-      <Feature_card />
-      <Features />
-      <Section2 />
-      <Trusted />
-      <Partner />
-
-      <Footer />
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/next" element={<Next />} />
+        </Routes>
+        <Footer />
+        <button className={`top ${up && "visible"}`}>
+          <KeyboardDoubleArrowUpIcon onClick={topTo} />
+        </button>
+      </Router>
     </div>
   );
 }

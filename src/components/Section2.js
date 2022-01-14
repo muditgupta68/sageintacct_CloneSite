@@ -10,13 +10,16 @@ function Section2() {
 
   const handleClick = (e) => {
     let compo = document.getElementsByClassName("plate");
+    let opt = document.getElementsByClassName("choice");
     console.log(e.target.getAttribute("value"));
     let val = e.target.getAttribute("value");
     console.log(compo.length);
     for (let i = 0; i < compo.length; i++) {
       compo[i].classList.remove("visible");
+      opt[i].classList.remove("selected");
     }
     compo[val].classList.add("visible");
+    opt[val].classList.add("selected");
   };
   return (
     <div className="wrapper_div">
@@ -68,6 +71,36 @@ function Section2() {
             para="The #1 accounting software provider trusted by leading firms across the financial services industry, including: wealth and asset management, real estate, insurance, lending and fintech. Learn more about Sage Intacct,...  "
             img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-financial-services.png?itok=s1wVQqGI"
             link="Financial Services industry"
+          />
+          <Plate
+            head="Healthcare"
+            para="Sage Intact is the choice of growing, data driven healthcare organizations. Our cloud-based accounting solution is the only accounting software endorsed by the AICPA and designated,...  "
+            img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-healthcare.png?itok=1YhNWrAo"
+            link="Healthcare industry"
+          />
+          <Plate
+            head="Hospitality"
+            para="Best-in-class financial management for multi-property hotels, resorts, restaurants, entertainment venues, clubs, and all other hospitality industry businesses. "
+            img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-hospitality.png?itok=TuH9r7wZ"
+            link="Hospitality industry"
+          />
+          <Plate
+            head="Nonprofits"
+            para="Sage Intact Helping Nonprofits Achieve Greater Impact."
+            img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-non-profits.png?itok=KD4eclUN"
+            link="Nonprofit industry"
+          />
+          <Plate
+            head="Professional Services"
+            para="Don't manage projects using the rear-view mirror. Sage Intacct delivers operational and financial visibility for your entire business—not just finance— for improved automation, "
+            img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-professional-services.png?itok=wD8WXM73"
+            link="Professional Services industry"
+          />
+          <Plate
+            head="Subscription and SaaS"
+            para="The #1 Subscription Billing & Financial Software for SaaS Companies. "
+            img="https://www.sageintacct.com/sites/default/files/styles/home-industry/public/accounting-financial-management-for-subscription-saas.png?itok=O1Yqxqxp"
+            link="Subscription and SaaS industry"
           />
         </div>
       </div>

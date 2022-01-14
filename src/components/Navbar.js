@@ -8,11 +8,16 @@ function Navbar() {
     menu.classList.toggle("visible");
   };
 
+  const top = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="navbar">
       <img
         src="https://www.sageintacct.com/sites/default/files/sage-intacct-logo.svg"
         alt="logo"
+        onClick={top}
       />
 
       <div className="menu">
